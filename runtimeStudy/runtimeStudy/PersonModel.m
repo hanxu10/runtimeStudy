@@ -11,12 +11,13 @@
 @implementation PersonModel
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-    return @{
-             @"start": @"start",
-             @"end": @"end",
-             @"userId": @"user_id",
-             @"name": @"name",
-             };
+//    return @{
+//             @"start": @"start",
+//             @"end": @"end",
+//             @"userId": @"user_id",
+//             @"name": @"name",
+//             };
+    return [NSDictionary dictionary];
 }
 
 

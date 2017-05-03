@@ -30,6 +30,8 @@
 		F901C6641EB2403C00C6CE09 /* NSValueTransformer+MYMPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F901C6541EB2403C00C6CE09 /* NSValueTransformer+MYMPredefinedTransformerAdditions.m */; };
 		F901C6691EB2405100C6CE09 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F901C6661EB2405100C6CE09 /* PersonModel.m */; };
 		F901C66A1EB2405100C6CE09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F901C6681EB2405100C6CE09 /* ViewController.m */; };
+		F901C69A1EB31D0B00C6CE09 /* XXClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F901C6991EB31D0B00C6CE09 /* XXClassInfo.m */; };
+		F901C69D1EB8924F00C6CE09 /* NSObject+XXModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F901C69C1EB8924F00C6CE09 /* NSObject+XXModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,10 @@
 		F901C6661EB2405100C6CE09 /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
 		F901C6671EB2405100C6CE09 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F901C6681EB2405100C6CE09 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F901C6981EB31D0B00C6CE09 /* XXClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXClassInfo.h; sourceTree = "<group>"; };
+		F901C6991EB31D0B00C6CE09 /* XXClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXClassInfo.m; sourceTree = "<group>"; };
+		F901C69B1EB8924F00C6CE09 /* NSObject+XXModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XXModel.h"; sourceTree = "<group>"; };
+		F901C69C1EB8924F00C6CE09 /* NSObject+XXModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XXModel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,7 @@
 		F901C61A1EB2401C00C6CE09 /* runtimeStudy */ = {
 			isa = PBXGroup;
 			children = (
+				F901C6971EB31CEF00C6CE09 /* XXModel */,
 				F901C6321EB2403C00C6CE09 /* MyMantle */,
 				F901C6651EB2405100C6CE09 /* PersonModel.h */,
 				F901C6661EB2405100C6CE09 /* PersonModel.m */,
@@ -176,6 +183,17 @@
 			path = MyMantle;
 			sourceTree = "<group>";
 		};
+		F901C6971EB31CEF00C6CE09 /* XXModel */ = {
+			isa = PBXGroup;
+			children = (
+				F901C6981EB31D0B00C6CE09 /* XXClassInfo.h */,
+				F901C6991EB31D0B00C6CE09 /* XXClassInfo.m */,
+				F901C69B1EB8924F00C6CE09 /* NSObject+XXModel.h */,
+				F901C69C1EB8924F00C6CE09 /* NSObject+XXModel.m */,
+			);
+			path = XXModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -207,6 +225,7 @@
 				TargetAttributes = {
 					F901C6171EB2401C00C6CE09 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 3JTPEA4UU7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -254,8 +273,10 @@
 				F901C6591EB2403C00C6CE09 /* MYMModel.m in Sources */,
 				F901C6601EB2403C00C6CE09 /* NSDictionary+MYMMappingAdditions.m in Sources */,
 				F901C6581EB2403C00C6CE09 /* MYMModel+NSCoding.m in Sources */,
+				F901C69D1EB8924F00C6CE09 /* NSObject+XXModel.m in Sources */,
 				F901C6621EB2403C00C6CE09 /* NSObject+MYMComparisonAdditions.m in Sources */,
 				F901C6641EB2403C00C6CE09 /* NSValueTransformer+MYMPredefinedTransformerAdditions.m in Sources */,
+				F901C69A1EB31D0B00C6CE09 /* XXClassInfo.m in Sources */,
 				F901C65F1EB2403C00C6CE09 /* NSDictionary+MYMManipulationAdditions.m in Sources */,
 				F901C65C1EB2403C00C6CE09 /* MYMValueTransformer.m in Sources */,
 				F901C6561EB2403C00C6CE09 /* MYMEXTScope.m in Sources */,
@@ -386,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3JTPEA4UU7;
 				INFOPLIST_FILE = runtimeStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xx.runtimeStudy;
@@ -397,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3JTPEA4UU7;
 				INFOPLIST_FILE = runtimeStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xx.runtimeStudy;
@@ -423,6 +446,7 @@
 				F901C6311EB2401C00C6CE09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

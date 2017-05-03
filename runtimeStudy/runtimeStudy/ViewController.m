@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MYM.h"
 #import "PersonModel.h"
+#import <objc/runtime.h>
 @interface ViewController ()
 
 @end
@@ -23,7 +24,21 @@
                            @"user_id": @"用户id",
                            @"name": @"用户名称",
                            };
+    PersonModel *per =  [MYMJSONAdapter modelOfClass:[PersonModel class] fromJSONDictionary:dict error:nil];
     
+    char a = 'a';
+    NSLog(@"%@",per);
+    
+    
+    void (^dd) (void) ;
+    
+    
+    Class ogc = object_getClass([PersonModel class]);
+    BOOL sedds =  class_isMetaClass(ogc);
+    
+    char *s = @encode(typeof(dd));
+    
+    NSLog(@"编码为%s",s);
 }
 
 //- (void)logAllPropertys:(Class)class{
